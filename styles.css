@@ -1,0 +1,120 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ff4081; /* Vibrant header background color */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main section styles */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    border: 2px solid #ff4081; /* Added border */
+    border-radius: 10px; /* Added border radius for rounded corners */
+}
+
+#entry-form label {
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Entry form styles */
+#entry-form {
+    margin-bottom: 20px;
+}
+
+/* Participants list styles */
+#participants-list {
+    margin-bottom: 20px;
+}
+
+/* Winner display styles */
+#winner-display {
+    margin-bottom: 20px;
+}
+
+/* Draw button styles */
+#drawButton, #resetButton {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+}
+
+#resetButton {
+    background-color: #007bff;
+}
+
+#drawButton:hover {
+    background-color: #ff8ba3; /* Lighter shade on hover */
+}
+
+#drawButton:active {
+    background-color: #e0006b; /* Darker shade on click */
+}
+
+#resetButton:hover {
+    background-color: #1367c0; /* Lighter shade on hover */
+}
+
+.btn-group {
+    display: flex;  /* Allows the two buttons to be displayed side by side */
+    gap: 10px;  /* Sets gap between the two buttons */
+}
+
+#entry-form input[type="text"] {
+    width: calc(100% - 28px);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.add-participant-button {
+    background-color: #ff4081; /* Vibrant button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+}
+
+.add-participant-button:hover {
+    background-color: #ff8ba3; /* Lighter shade on hover */
+}
+
+.add-participant-button:active {
+    background-color: #e0006b; /* Darker shade on click */
+}
+
+/* Responsive design using media queries */
+@media only screen and (max-width: 600px) {
+    main {
+        max-width: 100%; /* Set maximum width to 100% for smaller screens */
+    }
+
+    #drawButton {
+        width: 100%; /* Set button width to 100% for smaller screens */
+    }
+
+    input[type="text"] {
+        width: 100%; /* Set input width to 100% for smaller screens */
+    }
+
+    .add-participant-button {
+        width: 100%; /* Set button width to 100% for smaller screens */
+    }
+}
